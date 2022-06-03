@@ -1,0 +1,159 @@
+<?php
+// fectch review table 
+// fetch default table with break of 20pieces 
+
+include_once 'connection.php';
+$res = $conn->query("select * from review ");
+if($res->num_rows){
+for($i=0; $i<$res->num_rows; $i++ ){
+$row = fetch_array(MYSQLI_ASSOC);
+}
+echo $row;
+}
+else{
+echo 'no rewiew yet';
+}
+
+
+
+
+?>
+
+
+
+
+
+
+
+<html>
+<style>
+</style>
+<head>
+<title> thsi a table</title>
+</head>
+<body>
+<header>
+    <img src=".png"><h1>Azlo<h1>
+     <ul>
+	 <li><a href="index.html">Home</a></li>
+	 <li><a href="estate.html">Estate</a></li>
+	 <li><a href="automobile.html">Automobile</a></li>
+	 <li><a href="gadget.html">Gadget</a></li>
+	 </ul>
+	 
+	 <div>
+	  <span><img src=".png"></span>
+	  <span><img src=".png"></span>
+	  <span><img src=".png"></span>
+	  <span><img src=".png"></span>
+	 </div>
+	 
+	 <div>
+	 <img src=".png"><span>Improved way to get your Houses,Cars and Gadgets</span>
+	 </div>
+</header>
+
+  <section>
+  
+     <div>
+	 <center>
+	 <span><img src=".png"></span><br/>
+	 <span> Do you want to buy,sell or rent your car or swap</span></br>
+	 <button>automobile</button>
+	 </center>
+	 </div>
+  
+  <div>  
+  <span> Get your house, car and gadget at an afordable price</span></br>
+  <span> Navigate to <a href="automobile.html">automobile</a>,<a href="estate.html">estate</a> and <a href="gadget.html">gadget</a>
+  to ask or sell property anywhere in nigeria</span>
+  
+  </div>
+  
+       <div>
+	 <center>
+	 <span><img src=".png"></span><br/>
+	 <span> Do you want to sell,buy,rent Estate</span></br>
+	 <button>Estate</button>
+	 </center>
+	 </div>
+  
+  
+        <div>
+	 <center>
+	 <span><img src=".png"></span><br/>
+	 <span> Do you want to buy or sell your Gadgets</span></br>
+	 <button>Gadget</button>
+	 </center>
+	 </div>
+  
+  
+      <div>
+	 <center>
+	 <span><img src=".png"></span><br/>
+	 <span>get a house in Nigeria in one click</span>
+	 <button>Estate</button>
+	 </center>
+	 </div>
+  
+  
+  
+     <div>
+	 <center>
+	 <span><img src=".png"></span><br/>
+	 <span> get your gadget in one click</span>
+	 <button>Gadget</button>
+	 </center>
+	 </div>
+  
+  
+  
+       <div>
+	 <center>
+	 <span><img src=".png"></span><br/>
+	 <span> get your car in one click</span>
+	 <button>Automobile</button>
+	 </center>
+	 </div>
+      
+	  
+	  
+	  <!-- something from the database will be get here without hassle-->
+	  
+	
+  </section>
+  
+  
+  
+  <!-- website review will be shown here-->
+  
+     <center>
+    <form>
+	<span>Name</span><input type="text" placeholder="place your name"  name="user"required/><br/>
+	<span>email</span><input type="text" placeholder="enter your email" name="email" required/><br/>
+	<span>comment</span>
+	<textarea placeholder="comment here" name="text">
+	
+	</textarea></br>
+	<span>optional</span><input type="file" name="image" /></br>
+	<span>key</span><input type="text" placeholder="enter your customer key" name="keyword" required/></br>
+	<input type="submit" name="submit"></br>
+	</form>
+	</center>
+	
+  <footer>
+  <center>
+  &copy; <span>Azlo Comapany </span> 
+  
+  <div>
+     <span><img src=".png"></span>
+	  <span><img src=".png"></span>
+	  <span><img src=".png"></span>
+	  <span><img src=".png"></span> 
+  </div>
+  </center>
+  
+  </footer>
+</body>
+
+</html>
